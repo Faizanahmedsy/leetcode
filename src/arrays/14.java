@@ -21,17 +21,17 @@
 
 class Solution {
     public String longestCommonPrefix(String[] strs) {
-        if (strs == null || strs.length == 0) return "";
+        if (strs.length == 0) return ""; // If list is empty, return ""
 
-        String prefix = strs[0]; // Start with first word
-        
-        for (int i = 1; i < strs.length; i++) { 
-            while (strs[i].indexOf(prefix) != 0) { // Check if prefix is at the start
-                prefix = prefix.substring(0, prefix.length() - 1); // Remove last letter
-                if (prefix.isEmpty()) return ""; // If nothing is left, return ""
+        String prefix = strs[0]; // Start with the first word
+
+        for (String word : strs) { // Go through each word in the list
+            while (!word.startsWith(prefix)) { // If the word doesn’t start with prefix
+                prefix = prefix.substring(0, prefix.length() - 1); // Remove last letter from prefix
+                if (prefix.isEmpty()) return ""; // If prefix becomes empty, return ""
             }
         }
-        
-        return prefix;
+
+        return prefix; // Return the final common prefix
     }
 }
