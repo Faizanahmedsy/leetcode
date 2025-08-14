@@ -10,3 +10,5 @@ var lengthOfLastWord = function (s) {
 
   return s[s.length - 1].length;
 };
+
+console.log(lengthOfLastWord("  hello my   name   is   FAIZAN          "));
