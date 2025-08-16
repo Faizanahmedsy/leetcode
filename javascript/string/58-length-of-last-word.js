@@ -47,4 +47,23 @@ var app2lengthOfLastWord = function (s) {
   return count;
 };
 
+var app3lengthOfLastWord = function (s) {
+  // Initialize count to 0
+  let count = 0;
+
+  // Trim trailing spaces
+  s = s.trim();
+
+  // Iterate from the end of the string
+  for (let i = s.length - 1; i >= 0; i--) {
+    if (s[i] !== " ") {
+      count++;
+    } else {
+      break;
+    }
+  }
+
+  return count;
+};
+
 console.log(app2lengthOfLastWord("  hello my   name   is   FAIZAN          "));
