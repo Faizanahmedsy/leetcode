@@ -10,7 +10,7 @@
  * @param {ListNode} head
  * @return {boolean}
  */
-var hasCycle = function (head) {
+var App1hasCycle = function (head) {
   const set = new Set();
   let current = head;
   while (current != null) {
@@ -22,4 +22,19 @@ var hasCycle = function (head) {
   }
 
   return false;
+};
+
+var App2hasCycle = function (head) {
+  if (!head) return false;
+
+  let tortoise = head; // 🐢 1 step
+  let hare = head.next; // 🐇 2 steps
+
+  while (tortoise !== hare) {
+    if (!hare || !hare.next) return false; // reached end
+    tortoise = tortoise.next;
+    hare = hare.next.next;
+  }
+
+  return true; // cycle found
 };
