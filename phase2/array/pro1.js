@@ -72,4 +72,15 @@ function largestEven(arr = [3, 7, 4, 9, 2]) {
   return best;
 }
 
-console.log(largestEven());
+function containDuplicate(arr = [1, 2, 3, 12, 2]) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] === arr[j]) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+console.log(containDuplicate());
