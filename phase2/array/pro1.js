@@ -111,9 +111,50 @@ function task1() {
   for (let i = 0; i < arr.length; i++) {
     const curr = arr[i];
 
-    console.log(`index: ${i}, value: ${curr}`);
+    // console.log(`index: ${i}, value: ${curr}`);
   }
 })();
 
 // 🧱 LEVEL 2 — THINKING WITH VARIABLES (1.5 hours)
-// console.log(task2());
+
+// Count how many numbers are greater than 10
+function task5(arr = [4, 11, 8, 20, 3, 15]) {
+  let result = 0;
+  for (let i = 0; i < arr.length; i++) {
+    const cur = arr[i];
+
+    if (cur > 10) {
+      result++;
+    }
+  }
+
+  return result;
+}
+
+// Find the first number greater than 10, stop the loop early.
+function task6(arr = [2, 4, 12, 8, 20]) {
+  for (let i = 0; i < arr.length; i++) {
+    const cur = arr[i];
+    if (cur > 10) {
+      return cur;
+    }
+  }
+
+  return null;
+}
+
+//Check if array contains any negative number
+function task7(arr = [2, 4, 12, 8, -20, 0]) {
+  for (let i = 0; i < arr.length; i++) {
+    const curr = arr[i];
+    if (curr < 0) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+// 🧱 LEVEL 3 — ARRAYS AS BOXES (2 hours)
+
+console.log(task7());
