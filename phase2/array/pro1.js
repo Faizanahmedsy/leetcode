@@ -183,4 +183,66 @@ function task9(arr = [1, 2, 3, 4]) {
   return resultArr;
 }
 
-console.log(task9());
+function task10(arr = [1, 2, 3]) {
+  const resultArr = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    let curr = arr[i];
+    resultArr.push(curr * 2);
+  }
+
+  return resultArr;
+}
+
+// --------------------------------------------
+
+// 🧱 LEVEL 4 — STRINGS = ARRAY OF CHARACTERS (2 hours)
+
+// Count vowels in a string
+function task11(str = "leetcode") {
+  let count = 0;
+  const vowels = ["a", "e", "i", "o", "u"];
+
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+    if (vowels.includes(char.toLowerCase())) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+// Reverse a string without built-in reverse
+function task12(str = "abc") {
+  let newStrArr = [];
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    const curr = str[i];
+    newStrArr.push(curr);
+  }
+  return newStrArr.join("");
+}
+
+// Check if string contains any digit
+function task13(str = "abcd") {
+  for (let i = 0; i < str.length; i++) {
+    const curr = str[i];
+    if (Number.isFinite(Number(curr))) {
+      return true;
+    }
+  }
+
+  return false;
+}
+console.log(task13());
+
+// --------------------------------------------
+
+// 🧱 LEVEL 5 — NESTED LOOPS (YOU ALREADY DID THIS 🔥) (1 hour)
+
+// Count how many pairs are equal
+function task14(arr = [1, 2, 1, 1]) {}
+
+// Check if array is sorted ascending
+function task15(arr = [1, 3, 2]) {}
