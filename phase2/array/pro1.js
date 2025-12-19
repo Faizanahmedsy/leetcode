@@ -83,4 +83,37 @@ function containDuplicate(arr = [1, 2, 3, 12, 2]) {
   return false;
 }
 
-console.log(containDuplicate());
+// Task 1
+
+// Print numbers from 0 to 9
+function task1() {
+  for (let i = 0; i < 10; i++) {
+    // console.log(i);
+  }
+}
+
+(function task2() {
+  for (let i = 10; i > 0; i--) {
+    // console.log(i);
+  }
+})();
+
+// Print only even numbers from 1 to 20
+(function task3() {
+  for (let num = 1; num <= 20; num++) {
+    if (num % 2 == 0) {
+      // console.log(num);
+    }
+  }
+})();
+
+(function task4(arr = [5, 10, 15, 20]) {
+  for (let i = 0; i < arr.length; i++) {
+    const curr = arr[i];
+
+    console.log(`index: ${i}, value: ${curr}`);
+  }
+})();
+
+// 🧱 LEVEL 2 — THINKING WITH VARIABLES (1.5 hours)
+// console.log(task2());
