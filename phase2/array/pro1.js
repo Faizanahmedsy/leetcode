@@ -157,4 +157,30 @@ function task7(arr = [2, 4, 12, 8, -20, 0]) {
 
 // 🧱 LEVEL 3 — ARRAYS AS BOXES (2 hours)
 
-console.log(task7());
+// Create a new array that contains only even numbers.
+function task8(arr = [1, 2, 3, 4, 5, 6]) {
+  const resultArr = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    const curr = arr[i];
+    if (curr % 2 == 0) {
+      resultArr.push(curr);
+    }
+  }
+
+  return resultArr;
+}
+
+// Reverse an array manually
+
+function task9(arr = [1, 2, 3, 4]) {
+  let resultArr = [];
+
+  for (let i = arr.length - 1; i >= 0; i--) {
+    resultArr.push(arr[i]);
+  }
+
+  return resultArr;
+}
+
+console.log(task9());
