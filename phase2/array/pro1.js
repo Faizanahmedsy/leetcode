@@ -235,14 +235,35 @@ function task13(str = "abcd") {
 
   return false;
 }
-console.log(task13());
 
 // --------------------------------------------
 
 // 🧱 LEVEL 5 — NESTED LOOPS (YOU ALREADY DID THIS 🔥) (1 hour)
 
 // Count how many pairs are equal
-function task14(arr = [1, 2, 1, 1]) {}
+function task14(arr = [1, 2, 1, 1]) {
+  let numOfEqualPairs = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] == arr[j]) {
+        numOfEqualPairs++;
+      }
+    }
+  }
+
+  return numOfEqualPairs;
+}
 
 // Check if array is sorted ascending
-function task15(arr = [1, 3, 2]) {}
+function task15(arr = [1, 3, 2]) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] > arr[i + 1]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+console.log(task15());
