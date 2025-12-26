@@ -2,7 +2,13 @@
  * TASK 1: Print numbers from 1 to N using recursion.
  * Example: N = 5 -> 1 2 3 4 5
  */
-function task1(n = 5) {}
+function task1(n = 5) {
+  if (n === 0) {
+    return;
+  }
+  task1(n - 1);
+  console.log(n);
+}
 console.log(task1());
 
 /**

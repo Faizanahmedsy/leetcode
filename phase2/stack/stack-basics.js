@@ -5,7 +5,16 @@
  * - Pop 1 element
  * - Return the final stack
  */
-function task1() {}
+function task1() {
+  const stack = [];
+
+  stack.push(1);
+  stack.push(2);
+  stack.push(3);
+  stack.pop();
+
+  return stack;
+}
 console.log(task1());
 
 /**
@@ -14,7 +23,20 @@ console.log(task1());
  * Return true or false.
  * Example: "()()" -> true, "((" -> false
  */
-function task2() {}
+function task2(str = "())") {
+  const stack = [];
+
+  for (let i = 0; i < str.length; i++) {
+    const cur = str[i];
+    if (cur == "(") {
+      stack.push("(");
+    } else {
+      stack.pop();
+    }
+  }
+
+  return stack.length === 0 ? true : false;
+}
 console.log(task2());
 
 /**
