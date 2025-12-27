@@ -1,0 +1,163 @@
+{
+  "editor.mouseWheelZoom": true,
+  "atomKeymap.promptV3Features": true,
+  "editor.formatOnPaste": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.wordWrap": "on",
+  "code-runner.clearPreviousOutput": true,
+  "tabnine.experimentalAutoImports": true,
+  "editor.accessibilitySupport": "off",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "hidesExplorerArrows": true,
+  "files.autoSaveDelay": 1,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "workbench.iconTheme": "symbols",
+  "window.titleBarStyle": "custom",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "javascript": false,
+    "javascriptreact": true,
+    "svelte": true,
+    "css": true,
+    "typescript": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "rapidapi.terminalLink.enabled": true,
+  "git.openRepositoryInParentFolders": "never",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "terminal.integrated.env.windows": {},
+  "console-ninja.featureSet": "Community",
+  "console-ninja.toolsToEnableSupportAutomaticallyFor": {
+    "live-server-extension": true,
+    "live-preview-extension": true
+  },
+  "ionic.buildForProduction": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "'Illinois Mono', 'Lexend', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 22,
+  "editor.fontLigatures": true,
+  // Ensure white-space dots are hidden to match the clean Flutter style
+  "editor.renderWhitespace": "none",
+  "svelte.enable-ts-plugin": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.startupEditor": "none",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "nxConsole.showNodeVersionOnStartup": false,
+  "git.confirmSync": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.env.linux": {},
+  "react-native-tools.showUserTips": false,
+  "background.editorBackgrounds": [],
+  "background.panelBackgrounds": [
+    "/home/vivek/Downloads/vivid-blurred-colorful-background.jpg"
+  ],
+  "git.enableSmartCommit": true,
+  "workbench.productIconTheme": "icons-carbon",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "terminal.integrated.fontFamily": "monospace",
+  "background.windowBackgrounds": [
+    "/home/faizan/Downloads/wallpapers/wp8283848-macbook-gradient-wallpapers.jpg"
+  ],
+  "diffEditor.ignoreTrimWhitespace": false,
+  // "prettier.tabWidth": 4,
+  //Hello World
+  "vscode_custom_css.imports": ["file:///home/faizan/custom_vscode.css"],
+  "workbench.colorTheme": "Best Themes - Poimandres Black",
+  "extensions.ignoreRecommendations": true,
+  "cody.autocomplete.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.sideBar.location": "right",
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "security.workspace.trust.enabled": false,
+  "security.workspace.trust.emptyWindow": false,
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "workbench.activityBar.location": "top",
+  "window.menuBarVisibility": "compact",
+  "material-icon-theme.hidesExplorerArrows": true,
+  "material-icon-theme.opacity": 1,
+  "material-icon-theme.activeIconPack": "none",
+  "material-icon-theme.folders.theme": "specific",
+  "editor.minimap.enabled": false,
+  "window.customTitleBarVisibility": "windowed",
+  "editor.bracketPairColorization.enabled": true,
+  "workbench.colorCustomizations": {
+    "editorLineNumber.foreground": "#484f58",
+    "editor.selectionBackground": "#1f6feb44",
+    // This forces the native bracket colors to change (fixes the pink boxes in your image)
+    "editorBracketHighlight.foreground1": "#FFD700", // Gold/Yellow (Level 1)
+    "editorBracketHighlight.foreground2": "#DA70D6", // Light Orchid (Level 2)
+    "editorBracketHighlight.foreground3": "#87CEEB", // Sky Blue (Level 3)
+    "editorBracketMatch.border": "#87CEEB"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "punctuation.definition.block",
+          "punctuation.definition.parameters",
+          "punctuation.section.group",
+          "meta.brace",
+          "punctuation.separator.comma"
+        ],
+        "settings": {
+          "foreground": "#FFD700" // Change this to your preferred yellow/orange
+        }
+      },
+      {
+        "scope": ["keyword.control.return"],
+        "settings": { "foreground": "#7EE787" } // Light Green for 'return'
+      },
+      {
+        "scope": ["entity.name.type", "storage.type"],
+        "settings": { "foreground": "#B3F0FF" } // Lighter, popping Cyan
+      },
+      {
+        "scope": ["constant.language.null", "constant.language.boolean"],
+        "settings": { "foreground": "#79C0FF" } // Changes pink 'null'/'false' to blue
+      }
+    ]
+  },
+  "editor.lineNumbers": "off",
+  "editor.minimap.autohide": "mouseover",
+  "workbench.editor.enablePreview": false
+}
