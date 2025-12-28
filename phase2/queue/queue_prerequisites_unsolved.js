@@ -26,6 +26,10 @@
 function task1() {
   const queue = [];
 
+  queue.push(1);
+  queue.push(2);
+  queue.push(3);
+
   // enqueue elements here
 
   return queue;
@@ -38,6 +42,8 @@ console.log("Task 1:", task1());
  */
 function task2() {
   const queue = [1, 2, 3];
+
+  queue.shift();
 
   // remove the first element
 
@@ -54,7 +60,7 @@ function task3() {
 
   let frontElement = null;
   // get front element without removing
-
+  frontElement = queue[0];
   return frontElement;
 }
 console.log("Task 3:", task3());
@@ -66,6 +72,12 @@ console.log("Task 3:", task3());
 function task4() {
   const queue = [];
 
+  if (queue.length > 0) {
+    return false;
+  }
+
+  return true;
+
   // return true if empty else false
 }
 console.log("Task 4:", task4());
@@ -75,10 +87,19 @@ console.log("Task 4:", task4());
  * Example: [1,2,3] → return sum = 6
  */
 function task5() {
-  const queue = [1, 2, 3];
+  const queue = [12, 28, 30];
   let sum = 0;
 
-  // remove elements one by one and add to sum
+  /**
+   * We use a 'while' loop instead of a 'for' loop because .shift()
+   * changes the array length on every iteration.
+   * * In a for loop (i++), the index moves forward while the data
+   * shifts backward, causing the loop to skip half the elements.
+   */
+  while (queue.length > 0) {
+    const curr = queue.shift();
+    sum += curr;
+  }
 
   return sum;
 }
@@ -95,6 +116,11 @@ console.log("Task 5:", task5());
 function task6() {
   const operations = ["enqueue 1", "enqueue 2", "dequeue", "enqueue 3"];
   const queue = [];
+
+  queue.push(1);
+  queue.push(2);
+  queue.shift();
+  queue.push(3);
 
   // simulate operations
 

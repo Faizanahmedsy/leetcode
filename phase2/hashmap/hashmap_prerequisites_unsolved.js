@@ -17,6 +17,14 @@
  */
 function task1() {
   const arr = [1, 1, 2, 3, 1];
+  const map = new Map();
+
+  for (let i = 0; i < arr.length; i++) {
+    const curr = arr[i];
+    map.set(curr, (map.get(curr) || 0) + 1);
+  }
+
+  return map;
 }
 console.log("Task 1:", task1());
 
@@ -24,7 +32,17 @@ console.log("Task 1:", task1());
  * TASK 2: First repeated element
  */
 function task2() {
-  const arr = [2, 1, 3, 5, 3];
+  const arr = [2, 1, 3, 5, 1, 3];
+  const map = new Map();
+
+  for (let i = 0; i < arr.length; i++) {
+    const cur = arr[i];
+    if (map.has(cur)) {
+      return cur;
+    } else {
+      map.set(cur, 1);
+    }
+  }
 }
 console.log("Task 2:", task2());
 
@@ -33,6 +51,13 @@ console.log("Task 2:", task2());
  */
 function task3(target = 9) {
   const arr = [2, 7, 11, 15];
+  const map = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    const cur = arr[i];
+    let remaining = target - cur;
+    map.set(cur, remaining);
+  }
 }
 console.log("Task 3:", task3());
 

@@ -66,12 +66,22 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.fontFamily": "'Illinois Mono', 'Lexend', monospace",
+  "editor.fontFamily": "'Lexend', monospace",
+  // "editor.wrappingIndent": "same",
   "editor.fontSize": 14,
+  "editor.letterSpacing": 0.25,
   "editor.lineHeight": 22,
-  "editor.fontLigatures": true,
-  // Ensure white-space dots are hidden to match the clean Flutter style
+  "editor.fontLigatures": false,
+  "editor.cursorStyle": "line",
   "editor.renderWhitespace": "none",
+  "editor.guides.indentation": true,
+  "editor.guides.bracketPairs": false,
+
+  // "editor.minimap.enabled": false,
+  // "editor.lineHeight": 22,
+  // "editor.fontLigatures": true,
+  // // Ensure white-space dots are hidden to match the clean Flutter style
+  // "editor.renderWhitespace": "none",
   "svelte.enable-ts-plugin": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "workbench.startupEditor": "none",
