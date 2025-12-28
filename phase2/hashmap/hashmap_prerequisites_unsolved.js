@@ -49,15 +49,41 @@ console.log("Task 2:", task2());
 /**
  * TASK 3: Two sum
  */
-function task3(target = 9) {
+function task3(target = 19) {
   const arr = [2, 7, 11, 15];
-  const map = {};
+  const result = [];
+  const map = new Map();
 
   for (let i = 0; i < arr.length; i++) {
     const cur = arr[i];
     let remaining = target - cur;
-    map.set(cur, remaining);
+
+    if (map.has(remaining)) {
+      return [remaining, cur];
+    } else {
+      map.set(cur, remaining);
+    }
+
+    // console.log(remaining, "remaining");
+    // console.log(cur, "cur");
+
+    // if (remaining + cur === target) {
+    //   result.push(remaining);
+    //   result.push(cur);
+    //   return result;
+    // }
   }
+
+  // for (let i = 0; i < arr.length; i++) {
+  //   const cur = arr[i];
+  //   if (map.has(cur)) {
+  //     result.push(map.get(cur));
+  //     result.push(cur);
+  //     return result;
+  //   }
+  // }
+
+  console.log(map, "map");
 }
 console.log("Task 3:", task3());
 
