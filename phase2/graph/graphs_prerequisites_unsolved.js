@@ -134,7 +134,9 @@ function task6() {
 
   // return neighbors of node
 
-  return null;
+  if (!graph.hasOwnProperty(node)) return -1;
+
+  return graph[node];
 }
 console.log("Task 6:", task6());
 
