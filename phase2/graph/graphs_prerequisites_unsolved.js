@@ -47,6 +47,9 @@ console.log("Task 1:", task1());
  */
 function task2() {
   const graph = {};
+  graph["A"] = [];
+  graph["B"] = [];
+  graph["C"] = [];
 
   // add nodes A, B, C with empty arrays
 
