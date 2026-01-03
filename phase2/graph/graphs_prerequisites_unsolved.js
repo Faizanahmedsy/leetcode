@@ -69,6 +69,12 @@ function task3() {
 
   // add edge between A and B
 
+  // connect a to b
+  graph["A"].push("B");
+
+  // connect b to a
+  graph["B"].push("A");
+
   return graph;
 }
 console.log("Task 3:", task3());
@@ -88,6 +94,10 @@ function task4() {
   };
 
   // connect A with B and C
+  graph["A"].push("B");
+  graph["A"].push("C");
+  graph["B"].push("A");
+  graph["C"].push("A");
 
   return graph;
 }
