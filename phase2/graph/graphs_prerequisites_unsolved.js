@@ -116,11 +116,9 @@ function task5() {
   const node = "A";
 
   // return true if node exists, else false
-
-  return null;
+  return graph.hasOwnProperty(node);
 }
 console.log("Task 5:", task5());
-
 /**
  * TASK 6: Get all neighbors of a node
  * Example: node = "A" → ["B", "C"]
