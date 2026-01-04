@@ -152,7 +152,7 @@ function task7() {
 
   // return total node count
 
-  return null;
+  return Object.keys(graph).length;
 }
 console.log("Task 7:", task7());
 
