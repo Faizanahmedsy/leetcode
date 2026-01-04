@@ -208,8 +208,6 @@ function task9() {
 
   graph["A"] = graph["A"].filter((n) => n !== "B");
   graph["B"] = graph["B"].filter((n) => n !== "A");
-  console.log(graph["A"]);
-  console.log(graph["B"]);
 
   // remove connection between A and B
 
@@ -227,8 +225,13 @@ function task10() {
     B: ["A"],
     C: ["A"],
   };
+  let nodeToRemove = "A";
 
-  const nodeToRemove = "A";
+  for (let neighbor of graph[nodeToRemove]) {
+    graph[neighbor] = graph[neighbor].filter((n) => n !== nodeToRemove);
+  }
+
+  delete graph[nodeToRemove];
 
   // remove node and all its edges
 
