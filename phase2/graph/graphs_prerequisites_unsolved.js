@@ -152,6 +152,13 @@ function task7() {
 
   // return total node count
 
+  // we can also do this
+  // let count = 0;
+  // for (let node in graph) {
+  //   count++;
+  // }
+  // return count;
+
   return Object.keys(graph).length;
 }
 console.log("Task 7:", task7());
@@ -162,6 +169,14 @@ console.log("Task 7:", task7());
  * NOTE:
  * Each edge is stored twice in adjacency list.
  */
+
+// Notes: In an undirected graph, every edge is stored TWICE in adjacency list
+// So: A—B is stored as:
+// A → B
+// B → A
+
+// IMP NOTE: Edges in undirected graph = sum of all adjacency list lengths ÷ 2
+
 function task8() {
   const graph = {
     A: ["B", "C"],
@@ -170,8 +185,13 @@ function task8() {
   };
 
   // return total edges count
+  let totalConnections = 0;
 
-  return null;
+  for (let node in graph) {
+    console.log(node, "node");
+    totalConnections += graph[node].length;
+  }
+  return totalConnections / 2;
 }
 console.log("Task 8:", task8());
 
